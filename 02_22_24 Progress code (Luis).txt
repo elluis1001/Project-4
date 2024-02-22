@@ -1,0 +1,5 @@
+Cleaned up a bit by changing the gener values to integers and the 'smoking_history' column values to integers as well.
+
+Have not started part 4 yet.
+
+-Luis
