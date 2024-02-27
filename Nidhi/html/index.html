@@ -109,11 +109,12 @@
         .then(data => {
           // Display results  
           console.log(data)
-          probablilty = data.probability.values[0] * 100
+          var probablilty = data.probability.values[0] * 100
+          console.log(probablilty)
           if (data.prediction === 1) {
-            alert("Based on the input parameters provided, you have " + probability + "% of being diabetic")
+            alert("Based on the input parameters provided, you have " + probablilty + "% of being diabetic")
           } else {
-            alert("Based on the input parameters provided, you have " + probability + "% of not being diabetic")
+            alert("Based on the input parameters provided, you have " + probablilty + "% of not being diabetic")
           }
         });
     }
