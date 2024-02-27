@@ -102,13 +102,13 @@
       // API URL
       var apiUrl = window.location.origin + "/api/v1.0/predict/"+gender+"/"+age+"/"+hypertension+"/"+heart_disease+"/"+smoking_history+"/"+bmi+"/"+hba1c_level+"/"+blood_glucose_level;
       
-      
+
       // Make API call  
       fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
           // Display results  
-          console.log(data)
+          console.log(JSON.stringify(JSON.parse(data),null,2))
           alert("Prediction: " + data.prediction + ", Probability: " + data.probability[1]); 
         });
     }
