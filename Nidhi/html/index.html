@@ -100,7 +100,7 @@
       var blood_glucose_level = document.getElementById("blood_glucose_level").value;
 
       // API URL
-      var apiUrl = "REPLACE_WITH_PUBLIC_API_URL/api/v1.0/predict/"+gender+"/"+age+"/"+hypertension+"/"+heart_disease+"/"+smoking_history+"/"+bmi+"/"+hba1c_level+"/"+blood_glucose_level;
+      var apiUrl = window.location.origin + "/api/v1.0/predict/"+gender+"/"+age+"/"+hypertension+"/"+heart_disease+"/"+smoking_history+"/"+bmi+"/"+hba1c_level+"/"+blood_glucose_level;
       
       // Make API call  
       fetch(apiUrl)
